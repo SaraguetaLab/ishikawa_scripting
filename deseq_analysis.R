@@ -193,7 +193,7 @@ go_deseq <- function(input_counts, input_metadata, job_title, feature,
   mat  <- mat - rowMeans(mat)
   mat <- mat[ de_genes,annot]
   
-  name_topde = fileNaming("../RESULTS/plots/DEexpressingGenes",feature,job_title,"pdf")
+  name_topde = fileNaming("DEexpressingGenes",feature,job_title,"pdf")
   pheatmap(mat, col = hmcols,
            main = "",
            cluster_cols = F,
